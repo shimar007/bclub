@@ -777,14 +777,4 @@ $settings['entity_update_backup'] = TRUE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'biteclub',
-  'username' => 'biteclub',
-  'password' => '84g6o0ZEaBGAvQG0',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$config_directories['sync'] = 'sites/default/files/config_VDoYvpRMBx0jKUde0JK-LwdllkeUJLnJ5pcnnIrV2f7YOF-6xXTUe_82HH4MfRSxOOyRbQZPfw/sync';
+$config_directories['sync'] = 'config/default';
