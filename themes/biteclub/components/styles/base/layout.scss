@@ -1,0 +1,13 @@
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $font-family-cantata;
+    border: 5px solid $c-green;
+}
+
+body {
+    font-family: $font-family-cantata;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}

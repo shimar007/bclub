@@ -3,7 +3,7 @@ global-styling:
   css:
     base:
     component:
-      css/style.min.css: {}
+      css/index.css: {}
   js:
     js/main.js: {}
   dependencies:
