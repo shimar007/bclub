@@ -8,10 +8,13 @@
         "wikimedia/composer-merge-plugin": "^1.4",
         "drush/drush": "^9.7",
         "drupal/adminimal_theme": "^1.5",
-        "drupal/admin_toolbar": "^1.27"
+        "drupal/admin_toolbar": "^1.27",
+        "drupal/block_class": "^1.0",
+        "drupal/core": "^8.7",
+        "drupal/pathauto": "^1.4",
+        "drupal/field_group": "^3.0"
     },
     "replace": {
-        "drupal/core": "^8.7"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

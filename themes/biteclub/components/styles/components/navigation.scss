@@ -1,0 +1,12 @@
+.menu--main {
+    ul {
+        li {
+            display: inline-block;
+            padding: 40px;
+
+            &:last-of-type {
+                padding-right: 0px;
+            }
+        }
+    }
+}
