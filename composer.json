@@ -12,7 +12,8 @@
         "drupal/block_class": "^1.0",
         "drupal/core": "^8.7",
         "drupal/pathauto": "^1.4",
-        "drupal/field_group": "^3.0"
+        "drupal/field_group": "^3.0",
+        "drupal/paragraphs": "^1.9"
     },
     "replace": {
     },

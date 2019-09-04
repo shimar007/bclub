@@ -1,0 +1,22 @@
+uuid: cd8f49c1-55d7-464c-89dc-850315d12d2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - biteclub
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: biteclub_content
+theme: biteclub
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

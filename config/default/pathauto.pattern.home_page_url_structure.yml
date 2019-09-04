@@ -1,0 +1,22 @@
+uuid: 54cf719b-2971-4e8d-ab19-b0f033235bd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: home_page_url_structure
+label: 'Home Page URL Structure'
+type: 'canonical_entities:node'
+pattern: '[node:field_main_heading]'
+selection_criteria:
+  f255f9e2-9423-414b-9311-6e3f639e53f2:
+    id: node_type
+    bundles:
+      home_page: home_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: f255f9e2-9423-414b-9311-6e3f639e53f2
+selection_logic: and
+weight: -5
+relationships: {  }

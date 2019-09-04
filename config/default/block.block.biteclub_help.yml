@@ -1,0 +1,22 @@
+uuid: 165ea78b-8ca3-4605-80d4-ce391807e9f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - biteclub
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: biteclub_help
+theme: biteclub
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
