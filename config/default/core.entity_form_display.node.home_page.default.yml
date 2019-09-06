@@ -5,10 +5,44 @@ dependencies:
   config:
     - field.field.node.home_page.body
     - field.field.node.home_page.field_main_heading
+    - field.field.node.home_page.field_meta_tags
     - node.type.home_page
   module:
+    - field_group
+    - metatag
     - path
     - text
+third_party_settings:
+  field_group:
+    group_page_header:
+      children:
+        - title
+        - field_main_heading
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Page - Header'
+      region: content
+    group_page_body_content:
+      children:
+        - body
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Page - Body Content'
+      region: content
 id: node.home_page.default
 targetEntityType: node
 bundle: home_page
@@ -30,12 +64,18 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_main_heading:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_meta_tags:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
     region: content
   path:
     type: path
@@ -66,7 +106,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60

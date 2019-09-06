@@ -1,0 +1,9 @@
+uuid: e47ccf75-9c1f-4f82-a0b0-0e713a69d6cb
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_body_content
+label: 'Paragraph - Body Content'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

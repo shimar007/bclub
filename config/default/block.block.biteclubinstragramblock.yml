@@ -1,0 +1,29 @@
+uuid: d17d4c8b-0a85-4100-985e-ffbc418d06c4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:45860161-892b-48c5-9d58-17967a00c5c8'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - biteclub
+third_party_settings:
+  block_class:
+    classes: biteclub-instagram-block
+id: biteclubinstragramblock
+theme: biteclub
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:45860161-892b-48c5-9d58-17967a00c5c8'
+settings:
+  id: 'block_content:45860161-892b-48c5-9d58-17967a00c5c8'
+  label: 'Biteclub - Instragram Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

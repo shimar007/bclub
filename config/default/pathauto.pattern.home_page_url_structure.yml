@@ -7,16 +7,16 @@ dependencies:
 id: home_page_url_structure
 label: 'Home Page URL Structure'
 type: 'canonical_entities:node'
-pattern: '[node:field_main_heading]'
+pattern: '[node:title]'
 selection_criteria:
-  f255f9e2-9423-414b-9311-6e3f639e53f2:
+  269cc296-e6bb-4ad9-ad0a-e035120f7da1:
     id: node_type
     bundles:
       home_page: home_page
     negate: false
     context_mapping:
       node: node
-    uuid: f255f9e2-9423-414b-9311-6e3f639e53f2
+    uuid: 269cc296-e6bb-4ad9-ad0a-e035120f7da1
 selection_logic: and
 weight: -5
 relationships: {  }

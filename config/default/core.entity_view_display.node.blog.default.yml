@@ -4,25 +4,40 @@ status: true
 dependencies:
   config:
     - field.field.node.blog.body
+    - field.field.node.blog.field_body_content
+    - field.field.node.blog.field_main_heading
+    - field.field.node.blog.field_meta_tags
     - node.type.blog
   module:
-    - text
+    - entity_reference_revisions
+    - metatag
     - user
 id: node.blog.default
 targetEntityType: node
 bundle: blog
 mode: default
 content:
-  body:
+  field_body_content:
+    type: entity_reference_revisions_entity_view
+    weight: 1
     label: hidden
-    type: text_default
-    weight: 101
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 2
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: metatag_empty_formatter
     region: content
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  body: true
+  field_main_heading: true
