@@ -11,9 +11,10 @@ dependencies:
 third_party_settings:
   field_group:
     group_body_content_fields:
-      children: {  }
+      children:
+        - field_body_content
       parent_name: ''
-      weight: 20
+      weight: 0
       format_type: details
       format_settings:
         id: ''
@@ -22,13 +23,14 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Body Content - Fields'
+      region: content
 id: paragraph.paragraph_body_content.default
 targetEntityType: paragraph
 bundle: paragraph_body_content
 mode: default
 content:
   field_body_content:
-    weight: 0
+    weight: 1
     settings:
       rows: 9
       summary_rows: 3

@@ -1,0 +1,18 @@
+uuid: 7f315eec-0e7c-4441-ac6c-8f34aca20878
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Author
+type: author
+description: 'This is used for adding authors to the website'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

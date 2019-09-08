@@ -7,4 +7,6 @@ logo:
   use_default: 0
   path: 'public://biteclub2x.png'
 favicon:
-  use_default: 1
+  use_default: 0
+  path: 'public://BiteClub_Favicon.png'
+  mimetype: image/png

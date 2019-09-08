@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_body_content
     - node.type.blog
     - paragraphs.paragraphs_type.paragraph_body_content
+    - paragraphs.paragraphs_type.paragraph_heading_text
   module:
     - entity_reference_revisions
 id: node.blog.field_body_content
@@ -24,8 +25,12 @@ settings:
     negate: 0
     target_bundles:
       paragraph_body_content: paragraph_body_content
+      paragraph_heading_text: paragraph_heading_text
     target_bundles_drag_drop:
       paragraph_body_content:
         enabled: true
         weight: 2
+      paragraph_heading_text:
+        enabled: true
+        weight: 4
 field_type: entity_reference_revisions

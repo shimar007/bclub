@@ -1,0 +1,21 @@
+uuid: cb4a5f13-5735-44ca-9093-e3efd817142e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_text
+    - paragraphs.paragraphs_type.paragraph_heading_text
+  module:
+    - text
+id: paragraph.paragraph_heading_text.field_heading_text
+field_name: field_heading_text
+entity_type: paragraph
+bundle: paragraph_heading_text
+label: 'Heading Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

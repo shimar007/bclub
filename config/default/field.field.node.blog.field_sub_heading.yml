@@ -1,0 +1,21 @@
+uuid: fb8137b5-a147-4ca1-aa6b-6001e156f845
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sub_heading
+    - node.type.blog
+id: node.blog.field_sub_heading
+field_name: field_sub_heading
+entity_type: node
+bundle: blog
+label: 'Sub Heading'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'where to eat this week'
+default_value_callback: ''
+settings: {  }
+field_type: string

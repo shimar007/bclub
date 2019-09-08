@@ -1,0 +1,9 @@
+uuid: 80853232-247e-47a6-b4e5-dddbe6d0e86a
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_heading_text
+label: 'Paragraph - Heading Text'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

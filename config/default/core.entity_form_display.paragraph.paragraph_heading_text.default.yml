@@ -1,0 +1,42 @@
+uuid: 69f61a63-c9c1-425d-a2ef-d49882b6fed5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_heading_text.field_heading_text
+    - paragraphs.paragraphs_type.paragraph_heading_text
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_heading_text_fields:
+      children:
+        - field_heading_text
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Heading Text - Fields'
+      region: content
+id: paragraph.paragraph_heading_text.default
+targetEntityType: paragraph
+bundle: paragraph_heading_text
+mode: default
+content:
+  field_heading_text:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
