@@ -1,0 +1,32 @@
+.footer-secondary-wrapper {
+    margin: 50px 0 30px 0;
+}
+
+.footer-social-links  {
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 5px;
+
+            a {
+                font-size: 0;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                &:before {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+.footer-copyright {
+    font-family: $font-family-poppins;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 20px;
+}

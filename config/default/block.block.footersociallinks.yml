@@ -1,0 +1,29 @@
+uuid: 59a8a5d1-622c-4f6e-a051-d375ef34208b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer-social-links
+  module:
+    - block_class
+    - system
+  theme:
+    - biteclub
+third_party_settings:
+  block_class:
+    classes: footer-social-links
+id: footersociallinks
+theme: biteclub
+region: footer_right
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer-social-links'
+settings:
+  id: 'system_menu_block:footer-social-links'
+  label: 'Footer Social Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

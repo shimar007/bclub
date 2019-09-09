@@ -1,0 +1,29 @@
+uuid: 3994e52a-af46-4c8c-b4f7-b176dd59f45d
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.footer_newsletter
+  module:
+    - block_class
+    - webform
+  theme:
+    - biteclub
+third_party_settings:
+  block_class:
+    classes: footer-newsletter
+id: webform
+theme: biteclub
+region: footer_left
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Footer Newsletter'
+  provider: webform
+  label_display: '0'
+  webform_id: footer_newsletter
+  default_data: ''
+  redirect: false
+visibility: {  }

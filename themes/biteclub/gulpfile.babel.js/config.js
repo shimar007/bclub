@@ -17,4 +17,9 @@ export const paths = {
     modules: 'components/modules/**/*.js',
     dest: 'js',
   },
+  copy: {
+    src: 'components/fonts/**/*',
+    watch: 'components/fonts/**/*',
+    dest: 'css',
+  },
 };

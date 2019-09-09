@@ -1,0 +1,29 @@
+uuid: 569cd318-5d99-4a90-b491-3153e96103f3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:740d5271-f18f-46fb-8ada-380c7287ccf0'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - biteclub
+third_party_settings:
+  block_class:
+    classes: footer-copyright
+id: footercopyright
+theme: biteclub
+region: footer_copyright
+weight: 0
+provider: null
+plugin: 'block_content:740d5271-f18f-46fb-8ada-380c7287ccf0'
+settings:
+  id: 'block_content:740d5271-f18f-46fb-8ada-380c7287ccf0'
+  label: 'Footer Copyright'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

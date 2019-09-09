@@ -18,6 +18,9 @@ regions:
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   footer: 'Footer'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer right'
+  footer_copyright: 'Footer Copyright'
 version: VERSION
 core: '8.x'
 project: 'drupal'
