@@ -8,6 +8,10 @@ $baseDir = dirname($vendorDir);
 return array(
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+    'DisqusAPI' => $vendorDir . '/disqus/disqus-php/disqusapi/disqusapi.php',
+    'DisqusAPIError' => $vendorDir . '/disqus/disqus-php/disqusapi/disqusapi.php',
+    'DisqusInterfaceNotDefined' => $vendorDir . '/disqus/disqus-php/disqusapi/disqusapi.php',
+    'DisqusResource' => $vendorDir . '/disqus/disqus-php/disqusapi/disqusapi.php',
     'DivisionByZeroError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
     'Drupal' => $baseDir . '/core/lib/Drupal.php',
     'DrupalFinder\\DrupalFinder' => $vendorDir . '/webflo/drupal-finder/src/DrupalFinder.php',
@@ -18,6 +22,7 @@ return array(
     'Drupal\\Core\\DrupalKernelInterface' => $baseDir . '/core/lib/Drupal/Core/DrupalKernelInterface.php',
     'Drupal\\Core\\Site\\Settings' => $baseDir . '/core/lib/Drupal/Core/Site/Settings.php',
     'Error' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/Error.php',
+    'JSON' => $vendorDir . '/disqus/disqus-php/disqusapi/json.php',
     'ParseError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
     'SessionUpdateTimestampHandlerInterface' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
     'Symfony\\Component\\HttpFoundation\\FileBag' => $vendorDir . '/symfony/http-foundation/FileBag.php',

@@ -14,17 +14,13 @@ bundle: author
 mode: default
 content:
   field_name:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  links:
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
   body: true
+  links: true

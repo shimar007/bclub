@@ -16,8 +16,10 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  disqus: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_advanced_link: 0
   entity_reference_revisions: 0
   field: 0
   field_group: 0
@@ -29,6 +31,8 @@ module:
   image: 0
   imce: 0
   link: 0
+  link_attributes: 0
+  menu_link_attributes: 0
   menu_ui: 0
   metatag: 0
   metatag_verification: 0
@@ -47,9 +51,13 @@ module:
   token: 0
   toolbar: 0
   tour: 0
+  twig_field_value: 0
   update: 0
   user: 0
   views_ui: 0
+  webform: 0
+  webform_scheduled_email: 0
+  webform_ui: 0
   menu_link_content: 1
   pathauto: 1
   views: 10

@@ -523,6 +523,10 @@ class ComposerStaticInitDrupal8
     public static $classMap = array (
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
+        'DisqusAPI' => __DIR__ . '/..' . '/disqus/disqus-php/disqusapi/disqusapi.php',
+        'DisqusAPIError' => __DIR__ . '/..' . '/disqus/disqus-php/disqusapi/disqusapi.php',
+        'DisqusInterfaceNotDefined' => __DIR__ . '/..' . '/disqus/disqus-php/disqusapi/disqusapi.php',
+        'DisqusResource' => __DIR__ . '/..' . '/disqus/disqus-php/disqusapi/disqusapi.php',
         'DivisionByZeroError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
         'Drupal' => __DIR__ . '/../..' . '/core/lib/Drupal.php',
         'DrupalFinder\\DrupalFinder' => __DIR__ . '/..' . '/webflo/drupal-finder/src/DrupalFinder.php',
@@ -533,6 +537,7 @@ class ComposerStaticInitDrupal8
         'Drupal\\Core\\DrupalKernelInterface' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/DrupalKernelInterface.php',
         'Drupal\\Core\\Site\\Settings' => __DIR__ . '/../..' . '/core/lib/Drupal/Core/Site/Settings.php',
         'Error' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/Error.php',
+        'JSON' => __DIR__ . '/..' . '/disqus/disqus-php/disqusapi/json.php',
         'ParseError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
         'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
         'Symfony\\Component\\HttpFoundation\\FileBag' => __DIR__ . '/..' . '/symfony/http-foundation/FileBag.php',
