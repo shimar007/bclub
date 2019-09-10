@@ -10,8 +10,15 @@
 
             a {
                 font-size: 0;
+                color: $c-black;
 
                 &:hover {
+                    color: $c-black;
+                    text-decoration: none;
+                }
+
+                &:visited {
+                    color: $c-black;
                     text-decoration: none;
                 }
 
