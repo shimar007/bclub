@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_author_reference
+    - field.field.node.blog.field_blog_category
     - field.field.node.blog.field_body_content
     - field.field.node.blog.field_heading_image
     - field.field.node.blog.field_main_heading
@@ -44,6 +45,7 @@ content:
 hidden:
   body: true
   field_author_reference: true
+  field_blog_category: true
   field_heading_image: true
   field_main_heading: true
   field_sub_heading: true

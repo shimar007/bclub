@@ -1,0 +1,23 @@
+uuid: 52fd6b0e-c1a5-4580-80f8-503fa2746509
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_url_structure
+label: 'Taxonomy URL Structure'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  2b21cd03-ee9e-41b7-85c0-bddb1b80a596:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      blog_categories: blog_categories
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 2b21cd03-ee9e-41b7-85c0-bddb1b80a596
+selection_logic: and
+weight: -5
+relationships: {  }

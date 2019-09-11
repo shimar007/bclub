@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.blog.body
     - field.field.node.blog.field_author_reference
+    - field.field.node.blog.field_blog_category
     - field.field.node.blog.field_body_content
     - field.field.node.blog.field_heading_image
     - field.field.node.blog.field_main_heading
@@ -26,7 +27,7 @@ third_party_settings:
         - field_body_content
         - body
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: details
       format_settings:
         id: ''
@@ -54,6 +55,20 @@ third_party_settings:
         required_fields: true
       label: 'Page - Header'
       region: content
+    group_page_classification:
+      children:
+        - field_blog_category
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Page - Classification'
+      region: content
 id: node.blog.default
 targetEntityType: node
 bundle: blog
@@ -61,12 +76,21 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_author_reference:
     weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_blog_category:
+    weight: 10
     settings:
       match_operator: CONTAINS
       size: 60
@@ -105,7 +129,7 @@ content:
     type: string_textfield
     region: content
   field_meta_tags:
-    weight: 26
+    weight: 9
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
@@ -120,7 +144,7 @@ content:
     region: content
   path:
     type: path
-    weight: 6
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -128,21 +152,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 5
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 8
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 6
     region: content
     third_party_settings: {  }
   title:
@@ -155,7 +179,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     settings:
       match_operator: CONTAINS
       size: 60

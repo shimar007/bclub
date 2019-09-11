@@ -1,0 +1,15 @@
+uuid: 1086d3f3-1dc9-42c1-8c2f-82078d1085bf
+langcode: en
+status: true
+dependencies: {  }
+name: blog_header_image_style
+label: 'Blog Header - Image Style'
+effects:
+  1380697f-de09-4f37-8081-fd0e9d35a3d0:
+    uuid: 1380697f-de09-4f37-8081-fd0e9d35a3d0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 540
+      height: 675
+      anchor: center-center

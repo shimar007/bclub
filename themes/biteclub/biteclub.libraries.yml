@@ -5,6 +5,7 @@ global-styling:
     component:
       css/index.css: {}
   js:
+    js/bootstrap.min.js: {}
     js/app.js: {}
   dependencies:
     - core/jquery

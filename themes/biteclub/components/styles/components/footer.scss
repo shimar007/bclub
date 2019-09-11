@@ -2,8 +2,46 @@
     margin: 50px 0 30px 0;
 }
 
+.footer-newsletter {
+    margin: 20px 0;
+
+    .form-item {
+        width: 75%;
+        float: left;
+
+        input {
+            height: 46px;
+            font-size: 1.6rem;
+            padding: 0 10px;
+
+            @include placeholder {
+                color: $c-black;
+                opacity: .5;
+            }
+        }
+    }
+
+    .form-actions {
+        width: 25%;
+        float: left;
+
+        .form-submit {
+            background: $c-green;
+            color: $c-white;
+            font-weight: 600;
+            padding: 10px 30px;
+            font-size: 1.6rem;
+        }
+    }
+}
+
 .footer-social-links  {
+
+    margin: 40px 0 30px 0;
+
     ul {
+        text-align: right;
+
         li {
             display: inline-block;
             padding: 0 5px;
