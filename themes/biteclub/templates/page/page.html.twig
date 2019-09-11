@@ -78,8 +78,7 @@
 
   </main>
 
-  {% if page.footer %}
-    <footer role="contentinfo">
+  <footer role="contentinfo">
       {{ page.footer }}
       {% if page.footer_left and page.footer_right %}
         <div class="footer-secondary-wrapper">
@@ -94,11 +93,6 @@
             <div class="col-md-12">{{ page.footer_copyright }}</div>
         </div>
       {% endif %}
-    </footer>
-  {% endif %}
-
-  
-
-  
-
+  </footer>
+    
 </div>{# /.layout-container #}
