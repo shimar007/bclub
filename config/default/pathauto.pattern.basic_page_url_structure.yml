@@ -1,0 +1,22 @@
+uuid: 450d9695-7ba5-4ecb-9c35-36671403d552
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: basic_page_url_structure
+label: 'Basic Page - URL Structure'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  fd27a29a-4824-40ed-bec5-a50e695ec8c1:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: fd27a29a-4824-40ed-bec5-a50e695ec8c1
+selection_logic: and
+weight: -5
+relationships: {  }
