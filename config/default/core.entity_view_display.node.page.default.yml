@@ -4,9 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_body_content
+    - field.field.node.page.field_heading_image
+    - field.field.node.page.field_main_heading
+    - field.field.node.page.field_meta_tags
     - node.type.page
   module:
-    - text
+    - entity_reference_revisions
     - user
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
@@ -15,14 +19,22 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 100
+  field_body_content:
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 101
-    region: content
-hidden: {  }
+hidden:
+  body: true
+  field_heading_image: true
+  field_main_heading: true
+  field_meta_tags: true
