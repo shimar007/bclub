@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.blog.field_blog_category
     - field.field.node.blog.field_body_content
     - field.field.node.blog.field_disqus_comment
+    - field.field.node.blog.field_featured_blog
     - field.field.node.blog.field_heading_image
     - field.field.node.blog.field_main_heading
     - field.field.node.blog.field_meta_tags
@@ -59,6 +60,7 @@ third_party_settings:
       region: content
     group_page_classification:
       children:
+        - group_featured_blog
         - field_blog_category
       parent_name: ''
       weight: 1
@@ -70,6 +72,20 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Page - Classification'
+      region: content
+    group_featured_blog:
+      children:
+        - field_featured_blog
+      parent_name: group_page_classification
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Featured Blog'
       region: content
 id: node.blog.default
 targetEntityType: node
@@ -92,7 +108,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_blog_category:
-    weight: 10
+    weight: 22
     settings:
       match_operator: CONTAINS
       size: 60
@@ -118,6 +134,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_featured_blog:
+    weight: 21
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_heading_image:
     weight: 4
     settings:

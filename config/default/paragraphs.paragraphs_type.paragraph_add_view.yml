@@ -1,0 +1,9 @@
+uuid: dbec7d94-5b6d-4a00-921e-3b0df6ed6545
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_add_view
+label: 'Paragraph - Add View'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

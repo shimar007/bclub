@@ -1,0 +1,43 @@
+uuid: 6966dc06-cbde-4a67-bcc8-b0f95d70f0ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_add_view.field_view_reference_field
+    - paragraphs.paragraphs_type.paragraph_add_view
+  module:
+    - field_group
+    - viewsreference
+third_party_settings:
+  field_group:
+    group_add_view_fields:
+      children:
+        - field_view_reference_field
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+      label: 'Add View - Fields'
+      region: content
+id: paragraph.paragraph_add_view.default
+targetEntityType: paragraph
+bundle: paragraph_add_view
+mode: default
+content:
+  field_view_reference_field:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: '60'
+      placeholder: ''
+    third_party_settings: {  }
+    type: viewsreference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true

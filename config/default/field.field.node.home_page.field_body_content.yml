@@ -1,0 +1,37 @@
+uuid: 329d53fb-e167-4e60-babf-19c1523a272f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.home_page
+    - paragraphs.paragraphs_type.paragraph_add_view
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: home_page
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      paragraph_add_view: paragraph_add_view
+    target_bundles_drag_drop:
+      paragraph_add_view:
+        enabled: true
+        weight: 4
+      paragraph_body_content:
+        weight: 5
+        enabled: false
+      paragraph_heading_text:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
