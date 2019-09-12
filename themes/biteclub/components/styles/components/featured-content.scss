@@ -1,5 +1,37 @@
 .featured-content {
-    margin: 50px 0;
+    margin: 60px 0;
     display: inline-block;
     width: 100%;
+    background: $c-pink;
+    color: $c-white;
+
+    .content-wrapper {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        transform: translate(-45%, -45%);
+        text-align: center;
+        width: 100%;
+        max-width: 75%;
+
+        .sub-heading {
+            font-size: 1.8rem;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .heading-text {
+            display: inline-block;
+            width: 100%;
+            font-size: 1.4rem;
+            font-family: $font-family-cantata;
+            margin-bottom: 20px;
+        }
+    }
 }

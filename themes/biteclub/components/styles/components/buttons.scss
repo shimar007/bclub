@@ -1,4 +1,20 @@
 .button {
     font-family: $font-family-poppins;
     font-size: 1.6rem;
+
+    &-featured {
+        background: $c-white;
+        color: $c-black;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 10px 30px;
+
+        &:hover,
+        &:visited,
+        &:focus {
+            background: $c-white;
+            color: $c-black;
+            text-decoration: underline;
+        }
+    }
 }
