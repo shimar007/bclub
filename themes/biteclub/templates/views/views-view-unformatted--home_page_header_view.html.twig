@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div class="row">
+    {% for row in rows %}
+        {% set viewEntity = row.content['#view'].style_plugin.render_tokens[ loop.index0 ] %}
+        {% if loop.index0 == 0 or loop.index0 == 1 or loop.index0 == 2 %}
+            <a href="{{ viewEntity['{{ view_node }}']|striptags|trim}}" title="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}" class="col-md-4 column-link">
+                <div class="column-wrapper">
+                    <div class="image-wrapper">
+                        <img src="{{ viewEntity['{{ field_heading_image }}']|striptags|trim}}" class="img-fluid" alt="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}"/>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="sub-heading">{{ viewEntity['{{ field_sub_heading }}']|striptags|trim}}</div>
+                        <h3>{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}</h3>
+                    </div>
+                </div>
+            </a>
+        {% else %}
+            <a href="{{ viewEntity['{{ view_node }}']|striptags|trim}}" title="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}" class="col-md-3 column-link"> 
+                <div class="column-wrapper">
+                    <div class="image-wrapper">
+                        <img src="{{ viewEntity['{{ field_heading_image }}']|striptags|trim}}" class="img-fluid" alt="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}"/>
+                    </div>
+                    <div class="content-wrapper">
+                        <h3>{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}</h3>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>

@@ -1,0 +1,39 @@
+.home-page-header-view {
+
+    .column-link {
+        color: $c-black;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $c-black;
+        }
+    }
+
+    .content-wrapper {
+        margin: 10px 0;
+    }
+
+    .sub-heading {
+        font-family: $font-family-poppins;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+        color: $c-black;
+    }
+
+    h3 {
+        font-family: $font-family-cantata;
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+        color: $c-black;
+    }
+
+    .col-md-3 {
+        h3 {
+            font-size: 2.2rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}

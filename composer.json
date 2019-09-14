@@ -23,7 +23,8 @@
         "drupal/menu_link_attributes": "^1.0",
         "drupal/link_attributes": "^1.9",
         "drupal/editor_advanced_link": "^1.4",
-        "drupal/viewsreference": "^1.4"
+        "drupal/viewsreference": "^1.4",
+        "drupal/entity_clone": "^1.0"
     },
     "replace": {
     },

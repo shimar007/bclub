@@ -1,0 +1,19 @@
+.primary-tasks {
+    ul {
+        li {
+            margin-right: 5px;
+
+            a {
+                color: $c-green;
+                padding: 10px 20px;
+
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $c-green;
+                }
+
+            }
+        }
+    }
+}
