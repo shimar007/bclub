@@ -1,4 +1,14 @@
 header {
+
+    .site-branding {
+        width: 75%;
+        margin-left: -20px;
+    }
+
+    .site-navigation {
+        width: 70%;
+    }
+
     .region-header {
         display: flex;
         justify-content: space-between;

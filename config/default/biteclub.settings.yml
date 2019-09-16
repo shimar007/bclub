@@ -5,7 +5,7 @@ features:
   favicon: 1
 logo:
   use_default: 0
-  path: 'public://biteclub2x.png'
+  path: 'public://Logo.png'
 favicon:
   use_default: 0
   path: 'public://BiteClub_Favicon.png'

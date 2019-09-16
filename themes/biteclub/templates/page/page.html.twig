@@ -43,23 +43,22 @@
  */
 #}
 <div class="container">
-
   <header role="banner">
-    {{ page.header }}
+    <div class="row">
+      <div class="col-md-12">
+        {{ page.header }}
+      </div>
+    </div>
   </header>
 
   {{ page.primary_menu }}
   {{ page.secondary_menu }}
-
   {{ page.breadcrumb }}
-
   {{ page.highlighted }}
-
   {{ page.help }}
 
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
     <div class="layout-content">
       {{ page.content }}
     </div>{# /.layout-content #}

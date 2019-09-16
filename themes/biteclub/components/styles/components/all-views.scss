@@ -1,4 +1,6 @@
-.home-page-header-view {
+.home-page-header-view,
+.view-taxonomy-term {
+    padding: 0 10px;
 
     .column-link {
         color: $c-black;
@@ -29,11 +31,39 @@
         color: $c-black;
     }
 
+    .col-md-4 {
+        min-height: 600px;
+    }
+
     .col-md-3 {
+
+        min-height: 420px;
+
         h3 {
             font-size: 2.2rem;
             margin-top: 10px;
             margin-bottom: 10px;
         }
+    }
+
+    .js-pager__items {
+        margin-top: 30px;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+
+        .button {
+            background: $c-black;
+            color: $c-white;
+            padding: 15px 40px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+}
+
+.view-taxonomy-term {
+    .col-md-3 {
+        min-height: 475px;
     }
 }

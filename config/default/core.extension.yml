@@ -49,13 +49,16 @@ module:
   simple_sitemap: 0
   system: 0
   taxonomy: 0
+  taxonomy_menu_ui: 0
   text: 0
   token: 0
   toolbar: 0
   tour: 0
+  tvi: 0
   twig_field_value: 0
   update: 0
   user: 0
+  views_infinite_scroll: 0
   views_ui: 0
   viewsreference: 0
   webform: 0

@@ -22,7 +22,7 @@
     {% for row in rows %}
         {% set viewEntity = row.content['#view'].style_plugin.render_tokens[ loop.index0 ] %}
         {% if loop.index0 == 0 or loop.index0 == 1 or loop.index0 == 2 %}
-            <a href="{{ viewEntity['{{ view_node }}']|striptags|trim}}" title="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}" class="col-md-4 column-link">
+            <a href="{{ viewEntity['{{ view_node }}']|striptags|trim}}" title="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}" class="col-md-4 p-2 column-link">
                 <div class="column-wrapper">
                     <div class="image-wrapper">
                         <img src="{{ viewEntity['{{ field_heading_image }}']|striptags|trim}}" class="img-fluid" alt="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}"/>
@@ -34,7 +34,7 @@
                 </div>
             </a>
         {% else %}
-            <a href="{{ viewEntity['{{ view_node }}']|striptags|trim}}" title="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}" class="col-md-3 column-link"> 
+            <a href="{{ viewEntity['{{ view_node }}']|striptags|trim}}" title="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}" class="col-md-3 p-2 column-link"> 
                 <div class="column-wrapper">
                     <div class="image-wrapper">
                         <img src="{{ viewEntity['{{ field_heading_image }}']|striptags|trim}}" class="img-fluid" alt="{{ viewEntity['{{ field_main_heading }}']|striptags|trim}}"/>
