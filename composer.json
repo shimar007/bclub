@@ -28,7 +28,8 @@
         "drupal/shield": "^1.2",
         "drupal/tvi": "^1.0",
         "drupal/views_infinite_scroll": "^1.6",
-        "drupal/taxonomy_menu_ui": "^1.0"
+        "drupal/taxonomy_menu_ui": "^1.0",
+        "drupal/views_taxonomy_term_name_depth": "^3.3"
     },
     "replace": {
     },

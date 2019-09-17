@@ -15,7 +15,7 @@ third_party_settings:
 id: views_block__blog_header_view_block_1
 theme: biteclub
 region: content
-weight: -1
+weight: -4
 provider: null
 plugin: 'views_block:blog_header_view-block_1'
 settings:

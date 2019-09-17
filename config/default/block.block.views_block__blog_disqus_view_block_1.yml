@@ -1,0 +1,33 @@
+uuid: 6aaa8b93-4173-44ea-a69b-54c66ed05bcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.blog_disqus_view
+  module:
+    - ctools
+    - views
+  theme:
+    - biteclub
+id: views_block__blog_disqus_view_block_1
+theme: biteclub
+region: content
+weight: -1
+provider: null
+plugin: 'views_block:blog_disqus_view-block_1'
+settings:
+  id: 'views_block:blog_disqus_view-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

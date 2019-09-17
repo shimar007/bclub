@@ -1,15 +1,23 @@
-.menu--main {
-    ul {
-        li {
-            display: inline-block;
-            padding: 40px;
+.site-navigation {
+    width: 100%;
 
-            a {
-                color: $c-black !important;
-            }
+    &.menu--main {
+        ul {
+            text-align: center;
+            width: 100%;
+            margin-left: -22px;
 
-            &:last-of-type {
-                padding-right: 0;
+            li {
+                display: inline-block;
+                padding: 40px;
+
+                a {
+                    color: $c-black !important;
+                }
+
+                &:last-of-type {
+                    padding-right: 0;
+                }
             }
         }
     }

@@ -15,7 +15,6 @@ dependencies:
     - field.field.node.blog.field_sub_heading
     - node.type.blog
   module:
-    - disqus
     - entity_reference_revisions
     - metatag
     - user
@@ -33,13 +32,6 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  field_disqus_comment:
-    weight: 3
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: disqus_comment
-    region: content
   field_meta_tags:
     weight: 1
     label: hidden
@@ -56,6 +48,7 @@ hidden:
   body: true
   field_author_reference: true
   field_blog_category: true
+  field_disqus_comment: true
   field_featured_blog: true
   field_heading_image: true
   field_main_heading: true
