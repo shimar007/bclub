@@ -1,5 +1,6 @@
 .home-page-header-view,
-.view-taxonomy-term {
+.view-taxonomy-term,
+.view-related-blogs {
     padding: 0 10px;
 
     .column-link {
@@ -25,10 +26,11 @@
     }
 
     h3 {
-        font-family: $font-family-cantata;
+        font-family: $font-family-pt-serif;
         font-size: 2.8rem;
         margin-bottom: 25px;
         color: $c-black;
+        font-weight: 700;
     }
 
     .col-md-4 {
@@ -63,6 +65,16 @@
 }
 
 .view-taxonomy-term {
+    .col-md-3 {
+        min-height: 475px;
+    }
+}
+
+.view-related-blogs {
+    margin: 30px 0;
+    display: inline-block;
+    width: 100%;
+
     .col-md-3 {
         min-height: 475px;
     }
