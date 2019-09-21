@@ -1,0 +1,15 @@
+uuid: ff80080a-58d3-44b8-8deb-e904d0b2ba19
+langcode: en
+status: true
+dependencies: {  }
+name: basic_page_header_style
+label: 'Basic Page - Header Style'
+effects:
+  34aa5f61-9622-448b-a491-0cff647151d2:
+    uuid: 34aa5f61-9622-448b-a491-0cff647151d2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 650
+      anchor: center-center

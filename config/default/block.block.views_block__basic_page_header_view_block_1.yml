@@ -1,22 +1,22 @@
-uuid: c9134fe0-f070-4815-960c-ae09b88c4f55
+uuid: 932420cf-1824-4755-817f-cecc5e0a6c62
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.related_blogs
+    - views.view.basic_page_header_view
   module:
     - ctools
     - views
   theme:
     - biteclub
-id: views_block__related_blogs_block_1
+id: views_block__basic_page_header_view_block_1
 theme: biteclub
 region: content
-weight: -1
+weight: -3
 provider: null
-plugin: 'views_block:related_blogs-block_1'
+plugin: 'views_block:basic_page_header_view-block_1'
 settings:
-  id: 'views_block:related_blogs-block_1'
+  id: 'views_block:basic_page_header_view-block_1'
   label: ''
   provider: views
   label_display: '0'
@@ -27,7 +27,7 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
-      blog: blog
+      page: page
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

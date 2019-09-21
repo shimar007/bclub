@@ -6,6 +6,7 @@ dependencies:
     - views.view.blog_header_view
   module:
     - block_class
+    - ctools
     - views
   theme:
     - biteclub
@@ -26,4 +27,11 @@ settings:
   views_label: ''
   items_per_page: none
   context_mapping: {  }
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      blog: blog
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

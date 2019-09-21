@@ -8,11 +8,13 @@ dependencies:
     - field.field.node.page.field_heading_image
     - field.field.node.page.field_main_heading
     - field.field.node.page.field_meta_tags
+    - field.field.node.page.field_sub_heading
     - image.style.thumbnail
     - node.type.page
   module:
     - field_group
     - image
+    - imce
     - metatag
     - paragraphs
     - path
@@ -23,6 +25,7 @@ third_party_settings:
         - title
         - field_main_heading
         - field_heading_image
+        - field_sub_heading
       parent_name: ''
       weight: 0
       format_type: details
@@ -76,9 +79,11 @@ content:
   field_heading_image:
     weight: 3
     settings:
-      progress_indicator: throbber
       preview_image_style: thumbnail
-    third_party_settings: {  }
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
     type: image_image
     region: content
   field_main_heading:
@@ -94,6 +99,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
+    region: content
+  field_sub_heading:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   path:
     type: path

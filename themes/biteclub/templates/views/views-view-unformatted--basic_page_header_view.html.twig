@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Theme override to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ */
+#}
+
+<div class="row">
+    {% for row in rows %}
+        {% set viewEntity = row.content['#view'].style_plugin.render_tokens[ loop.index0 ] %}
+        <div class="col-md-12">
+            <div class="image-wrapper">
+                <img class="img-fluid" src="{{ viewEntity['{{ field_heading_image }}']|striptags|trim}}" alt="{{ viewEntity['{{ field_main_heading }}']|striptags|trim|raw }}"/>
+            </div>
+            <div class="content-wrapper">
+                <h1>
+                    {{ viewEntity['{{ field_main_heading }}']|striptags|trim|raw }}
+                </h1>
+                <div class="sub-heading">
+                    {{ viewEntity['{{ field_sub_heading }}']|striptags|trim|raw }}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
