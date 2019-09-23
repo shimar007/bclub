@@ -1,18 +1,17 @@
-uuid: 3ffa0049-4913-4a87-8b85-b5fd6d50082d
+uuid: b299257d-cfc9-46c4-8f2b-a82d36954128
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_body_content
-    - node.type.page
+    - node.type.overview_page
     - paragraphs.paragraphs_type.paragraph_add_view
-    - paragraphs.paragraphs_type.paragraph_body_content
   module:
     - entity_reference_revisions
-id: node.page.field_body_content
+id: node.overview_page.field_body_content
 field_name: field_body_content
 entity_type: node
-bundle: page
+bundle: overview_page
 label: 'Body Content'
 description: ''
 required: false
@@ -24,16 +23,15 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      paragraph_body_content: paragraph_body_content
       paragraph_add_view: paragraph_add_view
     target_bundles_drag_drop:
-      paragraph_body_content:
-        enabled: true
-        weight: 3
       paragraph_add_view:
         enabled: true
         weight: 4
+      paragraph_body_content:
+        weight: 5
+        enabled: false
       paragraph_heading_text:
-        weight: 4
+        weight: 6
         enabled: false
 field_type: entity_reference_revisions

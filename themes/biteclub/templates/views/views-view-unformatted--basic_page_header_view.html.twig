@@ -15,7 +15,6 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
-
 <div class="row">
     {% for row in rows %}
         {% set viewEntity = row.content['#view'].style_plugin.render_tokens[ loop.index0 ] %}

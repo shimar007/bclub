@@ -1,0 +1,22 @@
+uuid: 41d80f17-31b9-4a0a-93ef-cb5e64dfd0df
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: overview_page_url_structure
+label: 'Overview Page - URL Structure'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  9df0dd2b-0630-4466-842e-bf395e8c53e6:
+    id: node_type
+    bundles:
+      overview_page: overview_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9df0dd2b-0630-4466-842e-bf395e8c53e6
+selection_logic: and
+weight: -5
+relationships: {  }
