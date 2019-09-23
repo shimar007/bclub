@@ -4,16 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_heading_image
+    - field.storage.node.field_heading_intro_text
     - field.storage.node.field_main_heading
     - field.storage.node.field_sub_heading
-    - field.storage.paragraph.field_heading_text
     - image.style.large
     - node.type.blog
   module:
     - image
     - node
-    - paragraphs
-    - text
     - user
 id: home_page_feature_blog
 label: 'Home Page - Feature Blog'
@@ -316,11 +314,11 @@ display:
           absolute: false
           entity_type: node
           plugin_id: entity_link
-        field_heading_text:
-          id: field_heading_text
-          table: paragraph__field_heading_text
-          field: field_heading_text
-          relationship: field_body_content
+        field_heading_intro_text:
+          id: field_heading_intro_text
+          table: node__field_heading_intro_text
+          field: field_heading_intro_text
+          relationship: none
           group_type: group
           admin_label: ''
           label: ''
@@ -365,7 +363,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
+          type: basic_string
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -389,7 +387,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div class=\"featured-content\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <img class=\"img-fluid\" src=\"{{ field_heading_image }}\" />\r\n        </div>\r\n        <div class=\"col-md-8\">\r\n            <div class=\"content-wrapper\">\r\n                <div class=\"sub-heading\">{{ field_sub_heading }}</div>\r\n                <h2>{{ field_main_heading }}</h2>\r\n                {% if field_heading_text|render %}\r\n                    <div class=\"heading-text\">\r\n                        {{ field_heading_text }}\r\n                    </div>\r\n                {% endif %}\r\n                <div class=\"link-wrapper\">\r\n                    {{ view_node }}\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+            text: "<div class=\"featured-content\">\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4\">\r\n            <img class=\"img-fluid\" src=\"{{ field_heading_image }}\" />\r\n        </div>\r\n        <div class=\"col-md-8\">\r\n            <div class=\"content-wrapper\">\r\n                <div class=\"sub-heading\">{{ field_sub_heading }}</div>\r\n                <h2>{{ field_main_heading }}</h2>\r\n                {% if field_heading_intro_text|render %}\r\n                    <div class=\"heading-text\">\r\n                        {{ field_heading_intro_text }}\r\n                    </div>\r\n                {% endif %}\r\n                <div class=\"link-wrapper\">\r\n                    {{ view_node }}\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -535,16 +533,7 @@ display:
       header: {  }
       footer: {  }
       empty: {  }
-      relationships:
-        field_body_content:
-          id: field_body_content
-          table: node__field_body_content
-          field: field_body_content
-          relationship: none
-          group_type: group
-          admin_label: 'field_body_content: Paragraph'
-          required: true
-          plugin_id: standard
+      relationships: {  }
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
@@ -556,9 +545,9 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_heading_image'
+        - 'config:field.storage.node.field_heading_intro_text'
         - 'config:field.storage.node.field_main_heading'
         - 'config:field.storage.node.field_sub_heading'
-        - 'config:field.storage.paragraph.field_heading_text'
   block_1:
     display_plugin: block
     id: block_1
@@ -575,6 +564,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_heading_image'
+        - 'config:field.storage.node.field_heading_intro_text'
         - 'config:field.storage.node.field_main_heading'
         - 'config:field.storage.node.field_sub_heading'
-        - 'config:field.storage.paragraph.field_heading_text'
