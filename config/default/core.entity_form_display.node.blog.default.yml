@@ -45,10 +45,10 @@ third_party_settings:
       children:
         - title
         - field_main_heading
-        - field_sub_heading
         - field_heading_image
         - field_author_reference
         - field_heading_intro_text
+        - field_sub_heading
       parent_name: ''
       weight: 0
       format_type: details
@@ -175,14 +175,6 @@ content:
     third_party_settings: {  }
     type: metatag_firehose
     region: content
-  field_sub_heading:
-    weight: 3
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   path:
     type: path
     weight: 8
@@ -229,3 +221,4 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
+  field_sub_heading: true

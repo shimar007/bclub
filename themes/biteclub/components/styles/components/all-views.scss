@@ -17,6 +17,26 @@
         margin: 20px 0;
     }
 
+    .heading-wrapper {
+        color: $c-black;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $c-black;
+        }
+    }
+
+    .sub-heading-wrapper {
+        color: $c-black;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $c-black;
+        }
+    }
+
     .sub-heading {
         font-family: $font-family-poppins;
         font-size: 1.8rem;
