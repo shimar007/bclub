@@ -43,15 +43,17 @@
  */
 #}
 <div class="container">
-  <header role="banner">
+  <header role="banner" class="header">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
         {{ page.header }}
+      </div>
+      <div class="col-md-6">
+        {{ page.primary_menu }}
       </div>
     </div>
   </header>
 
-  {{ page.primary_menu }}
   {{ page.secondary_menu }}
   {{ page.breadcrumb }}
   {{ page.highlighted }}

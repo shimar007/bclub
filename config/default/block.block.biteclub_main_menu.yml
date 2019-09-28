@@ -17,7 +17,7 @@ _core:
 id: biteclub_main_menu
 theme: biteclub
 region: primary_menu
-weight: -6
+weight: -7
 provider: null
 plugin: 'system_menu_block:main'
 settings:
