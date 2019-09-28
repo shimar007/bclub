@@ -33,13 +33,6 @@ content:
       link: ''
     third_party_settings: {  }
     region: content
-  field_heading_intro_text:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
   field_meta_tags:
     weight: 1
     label: hidden
@@ -59,5 +52,6 @@ hidden:
   field_disqus_comment: true
   field_featured_blog: true
   field_heading_image: true
+  field_heading_intro_text: true
   field_main_heading: true
   field_sub_heading: true
