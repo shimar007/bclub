@@ -13,6 +13,19 @@
         }
     }
 
+    .image-wrapper {
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+            transition: all .4s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
     .content-wrapper {
         margin: 10px 0;
     }
