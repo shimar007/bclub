@@ -1,0 +1,8 @@
+uuid: b9254928-180a-449b-a357-01992b64b516
+langcode: en
+status: true
+dependencies: {  }
+id: blog_date_format
+label: 'Blog - Date Format'
+locked: false
+pattern: d.m.Y

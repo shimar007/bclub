@@ -2,7 +2,7 @@
     margin: 60px 0;
     display: inline-block;
     width: 100%;
-    background: $c-pink;
+    background: $c-green;
     color: $c-white;
 
     .image-wrapper {
@@ -32,6 +32,21 @@
             display: inline-block;
             width: 100%;
             margin-bottom: 20px;
+            color: $c-white;
+
+            a {
+                color: $c-white;
+                text-decoration: none;
+                font-family: $font-family-poppins;
+                font-weight: 600;
+
+                &:focus,
+                &:hover,
+                &:visited {
+                    color: $c-white;
+                    text-decoration: underline;
+                }
+            }
         }
 
         h2 {
