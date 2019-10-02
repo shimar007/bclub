@@ -46,10 +46,18 @@ h6 {
 p {
     font-family: $font-family-pt-serif;
     font-weight: 400;
+
+    .page-node-type-blog & {
+        font-size: 1.8rem;
+    }
 }
 
 strong,
 b {
     font-family: $font-family-poppins;
     font-weight: 600;
+
+    .page-node-type-blog & {
+        font-size: 1.8rem;
+    }
 }

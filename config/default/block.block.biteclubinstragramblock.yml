@@ -7,7 +7,6 @@ dependencies:
   module:
     - block_class
     - block_content
-    - ctools
   theme:
     - biteclub
 third_party_settings:
@@ -21,17 +20,10 @@ provider: null
 plugin: 'block_content:45860161-892b-48c5-9d58-17967a00c5c8'
 settings:
   id: 'block_content:45860161-892b-48c5-9d58-17967a00c5c8'
-  label: 'Party on the gram...'
+  label: 'party on the gram...'
   provider: block_content
   label_display: visible
   status: true
   info: ''
   view_mode: full
-visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      home_page: home_page
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+visibility: {  }
