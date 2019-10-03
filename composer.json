@@ -30,7 +30,10 @@
         "drupal/views_infinite_scroll": "^1.6",
         "drupal/taxonomy_menu_ui": "^1.0",
         "drupal/views_taxonomy_term_name_depth": "^3.3",
-        "drupal/minifyhtml": "^1.8"
+        "drupal/minifyhtml": "^1.8",
+        "drupal/search_api": "^1.14",
+        "drupal/facets": "^1.4",
+        "drupal/search_api_autocomplete": "^1.2"
     },
     "replace": {
     },
