@@ -62,7 +62,8 @@ b {
     }
 }
 
-.page-node-type-blog {
+.page-node-type-blog,
+.page-node-type-page {
     .node__content {
         max-width: 820px;
         margin: 0 auto;
