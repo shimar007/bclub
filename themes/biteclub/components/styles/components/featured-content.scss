@@ -27,6 +27,11 @@
         width: 100%;
         max-width: 75%;
 
+        @include respond-to('mobile-large') {
+            position: relative;
+            padding: 40px 0 60px 0;
+        }
+
         .sub-heading {
             font-size: 1.8rem;
             display: inline-block;

@@ -11,9 +11,18 @@
             margin-top: 15px;
             margin-left: -15px;
 
+            @include respond-to('tablet') {
+                z-index: 9999;
+                background: $c-white;
+            }
+
             li {
                 display: inline-block;
                 padding: 0 20px;
+
+                @include respond-to('tablet') {
+                    width: 100%;
+                }
 
                 a {
                     color: $c-black !important;
@@ -23,6 +32,10 @@
 
                 &:last-of-type {
                     padding-right: 0;
+
+                    @include respond-to('tablet') {
+                        padding-right: 20px;
+                    }
                 }
             }
         }

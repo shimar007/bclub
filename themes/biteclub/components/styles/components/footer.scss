@@ -9,10 +9,15 @@
         width: 70%;
         float: left;
 
+        @include respond-to('mobile-large') {
+            width: 60%;
+        }
+
         input {
             height: 46px;
             font-size: 1.6rem;
             padding: 0 10px;
+            width: 100%;
 
             @include placeholder {
                 color: $c-black;
@@ -25,12 +30,17 @@
         width: 25%;
         float: left;
 
+        @include respond-to('mobile-large') {
+            width: 40%;
+        }
+
         .form-submit {
             background: $c-green;
             color: $c-white;
             font-weight: 600;
             padding: 10px 30px;
             font-size: 1.6rem;
+            width: 100%;
         }
     }
 }

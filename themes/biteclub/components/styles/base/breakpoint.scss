@@ -1,14 +1,11 @@
 $breakpoints: (
     'mobile': 414px,
-    'tablet': 767px,
+    'mobile-large': 600px,
+    'tablet': 768px,
     'desktop': 992px,
     'large-desktop': 1200px
 ) !default;
 
-/// Mixin to manage responsive breakpoints
-/// @author Hugo Giraudel
-/// @param {String} $breakpoint - Breakpoint name
-/// @require $breakpoints
 @mixin respond-to($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         @media (max-width: map-get($breakpoints, $breakpoint)) {

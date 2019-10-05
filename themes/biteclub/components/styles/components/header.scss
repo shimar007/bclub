@@ -1,16 +1,42 @@
 header {
-
     margin-bottom: 50px;
+
+    .region-header {
+        width: 100%;
+
+        @include respond-to('tablet') {
+            width: 50%;
+            float: left;
+        }
+    }
+
+    .region-primary-menu {
+        width: 100%;
+
+        .navbar {
+            @include respond-to('tablet') {
+                display: inline-block;
+                width: 100%;
+                text-align: right;
+            }
+        }
+
+        .navbar-toggler {
+            position: absolute !important;
+            right: 0 !important;
+            top: -30px !important;
+
+            &.collapsed {
+                top: -50px !important;
+            }
+        }
+    }
+
 
     .site-branding {
         width: 100%;
         text-align: center;
         margin: 0 auto;
-        max-width: 600px;
-    }
-
-    .region-header {
-        display: flex;
-        justify-content: space-between;
+        max-width: 550px;
     }
 }
