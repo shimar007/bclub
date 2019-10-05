@@ -40,10 +40,12 @@
   ]
 %}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"></span>
+</button>
 <nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
    <div class="collapse navbar-collapse" id="main-menu">
         {# Label. If not displayed, we still provide it for screen readers. #}
         {% if not configuration.label_display %}

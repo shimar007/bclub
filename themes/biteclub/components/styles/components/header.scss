@@ -22,13 +22,18 @@ header {
         }
 
         .navbar-toggler {
+            color: rgba(0, 0, 0, .5);
+            border-color: rgba(0, 0, 0, .1);
             position: absolute !important;
-            right: 0 !important;
-            top: -30px !important;
+            right: 15px !important;
+            top: 0 !important;
+        }
 
-            &.collapsed {
-                top: -50px !important;
-            }
+        .navbar-toggler-icon {
+            height: 1px;
+            background: $c-black;
+            display: inherit;
+            margin: 5px;
         }
     }
 
