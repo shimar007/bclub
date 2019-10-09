@@ -134,6 +134,10 @@
         h1 {
             font-size: 4.5rem;
             margin-bottom: 15px;
+
+            @include respond-to('mobile-large') {
+                font-size: 3.2rem;
+            }
         }
 
         .sub-heading {

@@ -4,6 +4,10 @@
     img {
         width: 100%;
         min-height: 460px;
+
+        @include respond-to('mobile-large') {
+            min-height: auto;
+        }
     }
 
     .header-image-wrapper {
@@ -27,6 +31,15 @@
         text-align: center;
         width: 100%;
         max-width: 75%;
+
+        @include respond-to('mobile-large') {
+            position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
+            max-width: none;
+            padding: 25px 0;
+        }
 
         .sub-heading {
             font-family: $font-family-poppins;
