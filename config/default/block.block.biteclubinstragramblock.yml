@@ -20,7 +20,7 @@ provider: null
 plugin: 'block_content:45860161-892b-48c5-9d58-17967a00c5c8'
 settings:
   id: 'block_content:45860161-892b-48c5-9d58-17967a00c5c8'
-  label: 'party on the gram...'
+  label: 'Party on the ''gram...'
   provider: block_content
   label_display: visible
   status: true
