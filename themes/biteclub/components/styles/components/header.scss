@@ -28,6 +28,22 @@ header {
             right: 15px !important;
             top: 0 !important;
             padding: 5px;
+            display: none;
+
+            @include respond-to('desktop') {
+                display: block;
+                margin-top: 30px;
+            }
+
+            @include respond-to('tablet') {
+                display: block;
+                margin-top: 10px;
+            }
+
+            @include respond-to('mobile-large') {
+                display: block;
+                margin-top: -5px;
+            }
         }
 
         .navbar-toggler-icon {
