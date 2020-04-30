@@ -8,7 +8,7 @@
     "eslint-config-airbnb": "^17.1.1",
     "flickity": "^2.2.1",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.15.0",
     "sweet-scroll": "^4.0.0"
   },
